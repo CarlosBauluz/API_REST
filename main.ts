@@ -17,7 +17,7 @@ const dbName = 'API_REST';
 await client.connect();
 console.log('Connected successfully to server');
 const db = client.db(dbName); 
-const userscollection = db.collection<ejemplo>('users');
+const ejemplocollection = db.collection<ejemplo>('users');
 
 const handler = async(req:Request):Promise<Response> =>{
   const method = req.method;
